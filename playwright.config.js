@@ -9,13 +9,13 @@ module.exports = defineConfig({
   testDir: './tests',
 
   // Run tests in parallel (can disable if beginner)
-  //fullyParallel: true,
+  fullyParallel: true,
 
   // Fail the build on CI if test.only is left
-  //forbidOnly: !!process.env.CI,
+  forbidOnly: !!process.env.CI,
 
   // Retry failed tests (useful for stability)
-  //retries: 1,
+  retries: 1,
 
   // Number of workers (parallel execution)
   workers: 1, // keep 1 for beginner to avoid confusion
@@ -47,7 +47,7 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
   },
 
-  // Only Firefox project
+  // Only Firefox project 
   projects: [
     {
       name: 'Firefox Browser',
