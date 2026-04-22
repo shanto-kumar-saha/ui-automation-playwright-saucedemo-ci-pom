@@ -18,7 +18,7 @@ module.exports = defineConfig({
   //retries: 1,
 
   // Number of workers (parallel execution)
- // workers: 1, // keep 1 for beginner to avoid confusion
+  workers: 1, // keep 1 for beginner to avoid confusion
 
   // Reporter (nice HTML report)
  
