@@ -1,24 +1,12 @@
-// pages/CheckoutPage.js
-
-class CheckoutPage {
+class CartPage {
   constructor(page) {
     this.page = page;
-
-    this.firstName = page.locator('[data-test="firstName"]');
-    this.lastName = page.locator('[data-test="lastName"]');
-    this.postalCode = page.locator('[data-test="postalCode"]');
-    this.continueBtn = page.locator('[data-test="continue"]');
+    this.checkoutButton = page.locator('[data-test="checkout"]');
   }
 
-  async fillInfo(first, last, postal) {
-    await this.firstName.fill(first);
-    await this.lastName.fill(last);
-    await this.postalCode.fill(postal);
-  }
-
-  async continue() {
-    await this.continueBtn.click();
+  async goToCheckout() {
+    await this.checkoutButton.click();
   }
 }
 
-module.exports = CheckoutPage;
+module.exports = CartPage;
