@@ -1,7 +1,9 @@
 // test-data/testData.js
 
 const users = {
-  standardUser: {
+
+  standardUser:
+   {
     username: 'standard_user',
     password: 'secret_sauce'
   }

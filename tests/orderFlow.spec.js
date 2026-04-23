@@ -45,7 +45,7 @@ test('SauceDemo Full Order Flow with Price Validation', async ({ page }) => {
 
   await checkout.continue();
 
-  // 4. Price Validation 🔥
+  // 4. Price Validation 
   const expectedTotal = await overview.calculateExpectedTotal(products);
   const uiTotal = await overview.getUIItemTotal();
 
