@@ -66,7 +66,6 @@ Playwright-POM/
 
 ##  How to Run Tests
 
-##  Run Tests
 
 ```bash
 # Install dependencies
