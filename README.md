@@ -128,4 +128,9 @@ This project reflects **real-world QA automation practices**:
 
 ---
 
+<h2>📸 Udemy Course Complete Certificate</h2>
+
+![Playwright Automation Framework With JavaScript](https://github.com/shanto-kumar-saha/Playwright_WebAutomation1/assets/122052172/a86a3335-6811-41df-a8e3-972675f4ceb5)
+
+
 𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘥 ❤️ 𝘣𝘺 𝘚𝘩𝘢𝘯𝘵𝘰 𝘒𝘶𝘮𝘢𝘳 𝘚𝘢𝘩𝘢
