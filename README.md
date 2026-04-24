@@ -128,4 +128,4 @@ This project reflects **real-world QA automation practices**:
 
 ---
 
-𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒅 ❤️ 𝒃𝒚 𝑺𝒉𝒂𝒏𝒕𝒐 𝑲𝒖𝒎𝒂𝒓 𝑺𝒂𝒉𝒂
+𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘥 ❤️ 𝘣𝘺 𝘚𝘩𝘢𝘯𝘵𝘰 𝘒𝘶𝘮𝘢𝘳 𝘚𝘢𝘩𝘢
