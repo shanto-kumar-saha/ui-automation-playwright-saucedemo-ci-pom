@@ -1,19 +1,19 @@
-# Playwright Automation Framework (POM) – SauceDemo
+# Playwright Automation Framework (POM) 
 
-A beginner-friendly yet **industry-standard Playwright automation framework** built using **JavaScript** and **Page Object Model (POM)** design pattern.
+A high-standard End-to-End automation framework for SauceDemo built using Playwright and JavaScript, following the Page Object Model (POM) design pattern.
 
-This project demonstrates a **complete E2E order flow** including login, product selection, checkout, and **price validation**.
-
----
-
-## 👨‍💻 Author Info
-
-* 𝗔𝘂𝘁𝗵𝗼𝗿: Shanto Kumar Saha
-* 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐓𝐲𝐩𝐞: "E-Commerce" Automation Project with Page Object Model (POM) Design.
+This project demonstrates a complete E2E order flow, including login, product selection, checkout, and price validation, aligned with real-world QA automation practices.
 
 ---
 
-## 📌 Project Highlights
+## 👨‍💻 Author Info:
+
+* 𝗔𝘂𝘁𝗵𝗼𝗿: 𝑺𝒉𝒂𝒏𝒕𝒐 𝑲𝒖𝒎𝒂𝒓 𝑺𝒂𝒉𝒂
+* 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐓𝐲𝐩𝐞: "𝑬-𝑪𝒐𝒎𝒎𝒆𝒓𝒄𝒆" 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒐𝒏 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝒘𝒊𝒕𝒉 𝑷𝒂𝒈𝒆 𝑶𝒃𝒋𝒆𝒄𝒕 𝑴𝒐𝒅𝒆𝒍 (𝑷𝑶𝑴) 𝑫𝒆𝒔𝒊𝒈𝒏.
+
+---
+
+## 📌 Project Key Features:
 
 *  Page Object Model (POM) architecture
 *  Clean and scalable folder structure
@@ -24,7 +24,7 @@ This project demonstrates a **complete E2E order flow** including login, product
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure:
 
 ```
 Playwright-POM/
@@ -50,9 +50,9 @@ Playwright-POM/
 
 ---
 
-##  Test Scenario Covered
+## 🛒 Test Scenario Covered:
 
-### 🛒 Full Order Flow (E2E)
+###  Full Order Flow (E2E)
 
 * Login with valid user
 * Add multiple products to cart
@@ -64,7 +64,7 @@ Playwright-POM/
 
 ---
 
-##  How to Run Tests
+##  How to Run Tests:
 
 
 ```bash
@@ -89,7 +89,7 @@ npx playwright test --debug
 
 ---
 
-## Test Data
+## Test Data:
 
 Stored in:
 test-data/testData.js
@@ -99,7 +99,7 @@ test-data/testData.js
 
 ---
 
-## Validation Covered
+## ✅ Validation Covered:
 
 * ✔ URL validation after login
 * ✔ Error handling (invalid login)
@@ -108,7 +108,7 @@ test-data/testData.js
 
 ---
 
-##  Why This Project Matters
+## 📝 Why This Project Matters:
 
 This project reflects **real-world QA automation practices**:
 
@@ -119,7 +119,7 @@ This project reflects **real-world QA automation practices**:
 * Business logic validation (price check)
 
 ---
-## 🧰 Tech Stack
+## 🧰 Tech Stack:
 
 *  Playwright
 *  JavaScript (Node.js)
@@ -128,3 +128,4 @@ This project reflects **real-world QA automation practices**:
 
 ---
 
+𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒅 ❤️ 𝒃𝒚 𝑺𝒉𝒂𝒏𝒕𝒐 𝑲𝒖𝒎𝒂𝒓 𝑺𝒂𝒉𝒂
