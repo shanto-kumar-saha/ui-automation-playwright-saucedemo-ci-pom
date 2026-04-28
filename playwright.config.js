@@ -32,7 +32,7 @@ module.exports = defineConfig({
     browserName: 'firefox',
 
     // Headless mode (false = visible browser)
-    headless: false,
+    headless: true,
 
     // Slow down execution (good for learning)
     slowMo: 500,
