@@ -1,53 +1,4 @@
 
-// @ts-check
-const {  devices } = require('@playwright/test');
-const { trace } = require('console');
-
-
-
-const config = {
-
-  //Define all Test cases dircetory folder
-  testDir: './tests',
-  /* Maximum time one test can run for */
-  //30 sec wait for test cases
-  timeout: 30 * 1000,
-
-  // 5 sec wait for each await keyword
-  expect: {
-    timeout: 5000
-  },
-
-  reporter: 'html',
-
-  
-
-
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
-    browserName: 'chromium',
-    //When headless true not open browswer, 
-    //when headless false this will apprar in the browser
-    headless : false,
-    screenshot :'on',
-    
-    // When trace is on, every test cases it generate trace.zip file that's why we use "retain-on-failure"
-    //retain-on-failure this is use only when test case fail then it generate trace.zip and safe the memory in your system
-    trace: 'retain-on-failure', // off, on
-  },
-
-  
-};
-//export Config file
-module.exports = config;
- 
-
-
-
-
-
-
-/*
 // playwright.config.js
 
 // @ts-check
@@ -110,4 +61,3 @@ module.exports = defineConfig({
 
 // create-playwright@1.17.139
 
-*/
