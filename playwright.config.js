@@ -56,8 +56,9 @@ module.exports = defineConfig({
     },
   ],
 
-});
+})
 
 
 // create-playwright@1.17.139
 // stage testing
+// another Pull testing
