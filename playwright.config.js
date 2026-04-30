@@ -13,7 +13,7 @@ module.exports = defineConfig({
   fullyParallel: true,
 
   // Fail the build on CI if test.only is left
-  //forbidOnly: !!process.env.CI,
+  forbidOnly: !!process.env.CI,
 
   // Retry failed tests (useful for stability)
   retries: 1,
@@ -60,4 +60,4 @@ module.exports = defineConfig({
 
 
 // create-playwright@1.17.139
-
+// stage testing
