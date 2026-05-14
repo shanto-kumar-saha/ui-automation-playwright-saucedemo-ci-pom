@@ -1,4 +1,3 @@
-
 // playwright.config.js
 
 // @ts-check
@@ -6,58 +5,50 @@ const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
 
-  // Test folder location
+  // Test folder
   testDir: './tests',
 
-  // Run tests in parallel (can disable if beginner)
+  // Parallel execution
   fullyParallel: true,
 
-  // Fail the build on CI if test.only is left
-  //forbidOnly: !!process.env.CI,
+  // Prevent accidental test.only in CI
+  forbidOnly: !!process.env.CI,
 
-  // Retry failed tests (useful for stability)
-  retries: 1,
+  // Retry failed tests in CI
+  retries: process.env.CI ? 2 : 0,
 
-  // Number of workers (parallel execution)
-  workers: 1, // keep 1 for beginner to avoid confusion
+  // Worker count
+  workers: process.env.CI ? 1 : undefined,
 
-  // Reporter (nice HTML report)
- 
+  // HTML Report
   reporter: 'html',
 
   use: {
-    // Base URL (so you don’t repeat URL in every test)
+
+    // Base URL
     baseURL: 'https://www.saucedemo.com/',
 
-    // Browser settings
-    browserName: 'firefox',
-
-    // Headless mode (false = visible browser)
+    // Run browser in background (important for GitHub Actions)
     headless: true,
-
-    // Slow down execution (good for learning)
-    slowMo: 500,
 
     // Screenshot on failure
     screenshot: 'only-on-failure',
 
-    // Video recording
+    // Video on failure
     video: 'retain-on-failure',
 
-    // Trace for debugging
+    // Trace on retry
     trace: 'on-first-retry',
   },
 
-  // Only Firefox project 
+  // Browser Project
   projects: [
     {
       name: 'Firefox Browser',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+      },
     },
   ],
 
 });
-
-
-// create-playwright@1.17.139
-
