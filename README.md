@@ -1,34 +1,41 @@
-# Playwright Automation Framework (POM) 
+# Playwright Automation Framework (POM) with CI Integration
 
-A high-standard End-to-End automation framework for SauceDemo built using Playwright and JavaScript, following the Page Object Model (POM) design pattern.
+An end-to-end automation framework for SauceDemo built using Playwright and JavaScript, following the Page Object Model (POM) design pattern and integrated with Continuous Integration (CI) using GitHub Actions. 
 
-This project demonstrates a complete E2E order flow, including login, product selection, checkout, and price validation, aligned with real-world QA automation practices.
-
----
-
-## 👨‍💻 Author Info:
-
-* 𝗔𝘂𝘁𝗵𝗼𝗿: 𝑺𝒉𝒂𝒏𝒕𝒐 𝑲𝒖𝒎𝒂𝒓 𝑺𝒂𝒉𝒂
-* 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐓𝐲𝐩𝐞: "𝑬-𝑪𝒐𝒎𝒎𝒆𝒓𝒄𝒆" 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒐𝒏 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝒘𝒊𝒕𝒉 𝑷𝒂𝒈𝒆 𝑶𝒃𝒋𝒆𝒄𝒕 𝑴𝒐𝒅𝒆𝒍 (𝑷𝑶𝑴) 𝑫𝒆𝒔𝒊𝒈𝒏.
+This project covers a complete E2E order flow including login, product selection, checkout, and price validation, aligned with real-world QA automation practices and CI workflow execution.
 
 ---
 
-## 📌 Project Key Features:
+# 👨‍💻 Author Info
 
-*  Page Object Model (POM) architecture
-*  Clean and scalable folder structure
-*  Test data separation (data-driven approach)
-*  End-to-End order flow automation
-*  Price calculation validation (real QA scenario)
-*  Beginner-friendly and easy to extend
+* Author: Shanto Kumar Saha
+* Project Type: E-Commerce Automation Project with POM & CI Integration
 
 ---
 
-## 📁 Project Structure:
+# 📌 Project Key Features
 
-```
+* Page Object Model (POM) architecture
+* CI integration using GitHub Actions
+* Clean and scalable folder structure
+* Test data separation (data-driven approach)
+* End-to-End order flow automation
+* Price calculation validation (real QA scenario)
+* Automated test execution on push & pull request
+* HTML report upload from CI pipeline
+* Beginner-friendly and easy to extend
+
+---
+
+# 📁 Project Structure
+
+```bash
 Playwright-POM/
-│── pages/                # Page Object files
+│── .github/
+│   └── workflows/
+│       └── playwright.yml
+│
+│── pages/
 │   ├── LoginPage.js
 │   ├── ProductsPage.js
 │   ├── CartPage.js
@@ -36,11 +43,11 @@ Playwright-POM/
 │   ├── OverviewPage.js
 │   └── CompletePage.js
 │
-│── tests/                # Test files
+│── tests/
 │   ├── login.spec.js
 │   └── orderFlow.spec.js
 │
-│── test-data/            # Test data files
+│── test-data/
 │   └── testData.js
 │
 │── playwright.config.js
@@ -50,9 +57,9 @@ Playwright-POM/
 
 ---
 
-## 🛒 Test Scenario Covered:
+# 🛒 Test Scenario Covered
 
-###  Full Order Flow (E2E)
+## ✅ Full Order Flow (E2E)
 
 * Login with valid user
 * Add multiple products to cart
@@ -64,8 +71,7 @@ Playwright-POM/
 
 ---
 
-##  How to Run Tests:
-
+# 🚀 How to Run Tests
 
 ```bash
 # Install dependencies
@@ -89,48 +95,113 @@ npx playwright test --debug
 
 ---
 
-## Test Data:
+# 🧪 Test Data
 
 Stored in:
+
+```bash
 test-data/testData.js
+```
 
-✔ Users, products, and customer info  
-✔ Easy to maintain, reusable, and clean  
+### Included:
+* User credentials
+* Product information
+* Customer checkout data
+
+### Benefits:
+* Reusable
+* Easy to maintain
+* Clean data handling
 
 ---
 
-## ✅ Validation Covered:
+# ✅ Validation Covered
 
-* ✔ URL validation after login
-* ✔ Error handling (invalid login)
-* ✔ Product price calculation validation
-* ✔ Order success confirmation
+* URL validation after login
+* Error handling (invalid login)
+* Product price calculation validation
+* Order success confirmation
 
 ---
 
-## 📝 Why This Project Matters:
+# 🔄 Continuous Integration (CI) - GitHub Actions
 
-This project reflects **real-world QA automation practices**:
+This project is integrated with GitHub Actions CI pipeline for automated test execution.
 
-* Separation of concerns (POM)
-* Maintainable test structure
-* Scalable design
+## ✅ CI Features
+
+* Automated Playwright test execution on every push
+* Automated test execution on pull requests
+* GitHub Actions workflow integration
+* Automatic dependency installation
+* Automatic Playwright browser installation
+* Retry mechanism for failed tests in CI environment
+* HTML report artifact upload
+* Headless browser execution in CI pipeline
+
+---
+
+# ⚙️ CI Workflow
+
+```bash
+Developer Push Code
+        ↓
+GitHub Actions Trigger
+        ↓
+Install Dependencies
+        ↓
+Install Playwright Browsers
+        ↓
+Run Playwright Automation Tests
+        ↓
+Generate HTML Report
+        ↓
+Upload Test Report Artifact
+```
+
+---
+
+# 📝 Why This Project Matters
+
+This project reflects real-world QA automation and CI practices:
+
+* Separation of concerns using POM
+* Maintainable automation framework
+* Scalable test design
 * Data-driven testing
-* Business logic validation (price check)
-
----
-## 🧰 Tech Stack:
-
-*  Playwright
-*  JavaScript (Node.js)
-*  NPM
-*  @playwright/test
+* Business logic validation
+* Automated CI pipeline execution
+* Cloud-based automation execution workflow
 
 ---
 
-<h2>📸 Udemy Course Complete Certificate</h2>
+# 🧰 Tech Stack
+
+* Playwright
+* JavaScript (Node.js)
+* Git & GitHub
+* GitHub Actions (CI)
+* NPM
+* @playwright/test
+
+---
+
+# 📸 Udemy Course Complete Certificate
 
 ![Playwright Automation Framework With JavaScript](https://github.com/shanto-kumar-saha/Playwright_WebAutomation1/assets/122052172/a86a3335-6811-41df-a8e3-972675f4ceb5)
 
+---
 
-𝘋𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘥 ❤️ 𝘣𝘺 𝘚𝘩𝘢𝘯𝘵𝘰 𝘒𝘶𝘮𝘢𝘳 𝘚𝘢𝘩𝘢
+# 🎯 Future Improvements
+
+* Cross-browser execution
+* API testing integration
+* Environment-based execution
+* Docker integration
+* Jenkins CI integration
+* Allure reporting
+* Parallel execution optimization
+
+---
+
+Developed ❤️ by Shanto Kumar Saha
