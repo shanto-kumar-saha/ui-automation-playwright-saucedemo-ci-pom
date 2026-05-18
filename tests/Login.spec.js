@@ -1,7 +1,9 @@
-// tests/login.spec.js
+// tests/Login.spec.js
 
 const { test, expect } = require('@playwright/test');
+
 const LoginPage = require('../pages/LoginPage');
+
 const { users } = require('../test-data/testData');
 
 test.describe('Login Page Tests', () => {
@@ -12,6 +14,7 @@ test.describe('Login Page Tests', () => {
   });
 
   test('Login with standard user (valid)', async ({ page }) => {
+
     const loginPage = new LoginPage(page);
 
     await loginPage.login(
@@ -23,6 +26,7 @@ test.describe('Login Page Tests', () => {
   });
 
   test('Login with locked out user', async ({ page }) => {
+
     const loginPage = new LoginPage(page);
 
     await loginPage.login(
@@ -31,15 +35,21 @@ test.describe('Login Page Tests', () => {
     );
 
     const errorText = await loginPage.getErrorMessage();
+
     await expect(errorText).toContain('locked out');
   });
 
   test('Login with invalid user', async ({ page }) => {
+
     const loginPage = new LoginPage(page);
 
-    await loginPage.login('invalid_user', 'wrong_password');
+    await loginPage.login(
+      users.invalidUser.username,
+      users.invalidUser.password
+    );
 
     const errorText = await loginPage.getErrorMessage();
+
     await expect(errorText).toContain('do not match');
   });
 

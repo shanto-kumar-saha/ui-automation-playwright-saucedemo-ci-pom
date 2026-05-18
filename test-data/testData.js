@@ -2,10 +2,19 @@
 
 const users = {
 
-  standardUser:
-   {
+  standardUser: {
     username: 'standard_user',
     password: 'secret_sauce'
+  },
+
+  lockedOutUser: {
+    username: 'locked_out_user',
+    password: 'secret_sauce'
+  },
+
+  invalidUser: {
+    username: 'invalid_user',
+    password: 'wrong_password'
   }
 };
 
@@ -15,18 +24,19 @@ const customerInfo = {
   postalCode: '32'
 };
 
-// Product data (for validation + reuse)
 const products = {
   backpack: {
     name: 'Sauce Labs Backpack',
     price: 29.99,
     addButton: '[data-test="add-to-cart-sauce-labs-backpack"]'
   },
+
   bikeLight: {
     name: 'Sauce Labs Bike Light',
     price: 9.99,
     addButton: '[data-test="add-to-cart-sauce-labs-bike-light"]'
   },
+
   fleeceJacket: {
     name: 'Sauce Labs Fleece Jacket',
     price: 49.99,
@@ -34,4 +44,8 @@ const products = {
   }
 };
 
-module.exports = { users, customerInfo, products };
+module.exports = {
+  users,
+  customerInfo,
+  products
+};
