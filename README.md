@@ -190,7 +190,7 @@ This project reflects real-world QA automation and CI practices:
 
 ![Playwright Automation Framework With JavaScript](https://github.com/shanto-kumar-saha/Playwright_WebAutomation1/assets/122052172/a86a3335-6811-41df-a8e3-972675f4ceb5)
 
----
+<!-- ---
 
 # 🎯 Future Improvements
 
@@ -202,6 +202,6 @@ This project reflects real-world QA automation and CI practices:
 * Allure reporting
 * Parallel execution optimization
 
----
+--- -->
 
 Developed ❤️ by Shanto Kumar Saha
