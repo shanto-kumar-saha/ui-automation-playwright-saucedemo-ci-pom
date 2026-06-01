@@ -13,7 +13,7 @@ This project covers a complete E2E order flow including login, product selection
 
 ---
 
-# 📌 Project Key Features
+# Project Key Features
 
 * Page Object Model (POM) architecture
 * CI integration using GitHub Actions
@@ -71,7 +71,7 @@ Playwright-POM/
 
 ---
 
-# 🚀 How to Run Tests
+# How to Run Tests
 
 ```bash
 # Install dependencies
@@ -95,7 +95,7 @@ npx playwright test --debug
 
 ---
 
-# 🧪 Test Data
+#  Test Data
 
 Stored in:
 
@@ -115,7 +115,7 @@ test-data/testData.js
 
 ---
 
-# ✅ Validation Covered
+#  Validation Covered
 
 * URL validation after login
 * Error handling (invalid login)
@@ -128,7 +128,7 @@ test-data/testData.js
 
 This project is integrated with GitHub Actions CI pipeline for automated test execution.
 
-## ✅ CI Features
+##  CI Features
 
 * Automated Playwright test execution on every push
 * Automated test execution on pull requests
@@ -161,7 +161,7 @@ Upload Test Report Artifact
 
 ---
 
-# 📝 Why This Project Matters
+#  Why This Project Matters
 
 This project reflects real-world QA automation and CI practices:
 
