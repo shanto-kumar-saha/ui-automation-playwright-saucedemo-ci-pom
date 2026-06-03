@@ -202,6 +202,6 @@ This project reflects real-world QA automation and CI practices:
 * Allure reporting
 * Parallel execution optimization
 
---- -->
+--- -->.
 
 Developed ❤️ by Shanto Kumar Saha
