@@ -24,6 +24,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: lts/*
+        cache: 'npm'
 
     # Install dependencies
     - name: Install Dependencies
@@ -31,7 +32,9 @@ jobs:
 
     # Install Playwright browsers
     - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
+      run: npx playwright install firefox --with-deps
+        
+        #npx playwright install --with-deps
 
     # Run tests
     - name: Run Playwright Tests
